@@ -10,7 +10,7 @@ export default function Board({ game, handleClick }) {
         choice={move}
         key={index}
         value={index}
-        handleClick={handleClick}
+        handleClick={() => handleClick(index)}
       />
     );
   });
